@@ -1,0 +1,68 @@
+
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+.image{
+    width: 30%;
+    float: right;
+}
+
+.profile{
+    width: 70%;
+    background-color: azure;
+    padding: 10px;
+}
+
+.card1{
+    justify-content: center;
+    align-items: center;
+    border: 10px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+.mda_image{
+    width: 30%;
+    float: right;
+}
+
+.description{
+    width: 70%;
+    background-color: azure;
+    padding: 10px;
+}
+
+.card2{
+    justify-content: center;
+    align-items: center;
+    border: 10px;
+}
+
+h1{
+    background-color: rgb(71, 71, 216);
+    color: azure;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.links{
+    background-color: rgb(23, 23, 31);
+    color: azure;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+}
+
+.links :hover{
+    color: rgb(203, 151, 252);
+}
+
+h2{
+    background-color: rgb(74, 151, 125);
+    color: rgb(24, 19, 14);
+    border-radius: 10px;
+}
