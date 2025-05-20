@@ -1,0 +1,18 @@
+.header{
+    font-family: "rubik", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #011C27;
+    color: white;
+    border-radius: 5px;
+    
+}
+
+.temple-links{
+    display: flex;
+    gap: 0.5rem;
+    font-size: 2rem;
+}
+

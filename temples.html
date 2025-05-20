@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Temple Photo Album</title>
+    <meta name="desciption" content="Temply photo album.">
+    <meta name="author" content="Lisakhanya Gasa">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="scripts/temples.js"></script>
+    
+
+</head>
+<body>
+    <div class="header">
+        <p class="text">Temple Album</p>
+
+        <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+
+        <nav class="temple-links">
+            <a href="">Home</a>
+            <a href="">Old</a>
+            <a href="">New</a>
+            <a href="">Large</a>
+            <a href="">Small</a>
+        </nav>
+    </div>
+
+    <main>
+        <h1 class="title">Temples</h1>
+        <section class="gallery">
+            <figure>
+                <img src="images/barranquilla_colombia_temple.jpeg" alt="Barranquilla Columbia Temple">
+                <figcaption>Barranquilla Columbia Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/boise_temple_lds.jpeg" alt="Boise Temple">
+                <figcaption>Boise Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/brasilia_brazil_temple_exterior.jpeg" alt="Brasilia Brazil Temple">
+                <figcaption>Brasilia Brazil Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/detroit_temple.jpeg" alt="Detroit Temple">
+                <figcaption>Detroit Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/houston_temple_lds.jpeg" alt="Houston Temple">
+                <figcaption>Houston Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/kansas_city_temple_lds.jpg" alt="Kansas City Temple">
+                <figcaption>Kansas City Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/layton_utah_temple_exterior.jpeg" alt="Layton Utah Temple">
+                <figcaption>Layton Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/lima_peru_temple_lds.jpeg" alt="Lima Peru Temple">
+                <figcaption>Lima Peru Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/los_angeles_temple.jpeg" alt="Los Angeles Temple">
+                <figcaption>Los Angeles Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/madrid_spain_temple_lds.jpeg" alt="Madrid Spain Temple">
+                <figcaption>Madrid Spain Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/mesa_temple.jpeg" alt="Mesa Temple">
+                <figcaption>Mesa Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/montevideo_uruguay_temple_lds.jpeg" alt="Montevideo Uruguay Temple">
+                <figcaption>Montevideo Uruguay Temple</figcaption>
+            </figure>
+        </section>
+
+    </main>
+    <footer>
+        <p>2025 | Lisakhanya | South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <!--last modified date-->
+    <script>
+        const lastModified = document.lastModified;
+        document.getElementById("lastModified").textContent = `Last modified: ${lastModified}`;
+    </script>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+            menuToggle.textContent = navMenu.classList.contains('show') ? '✖' : '☰';
+  });
+</script>
+</body>
