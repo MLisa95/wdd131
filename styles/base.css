@@ -15,6 +15,11 @@ body{
     padding: 10px;
 }
 
+.card-container{
+    display: grid;
+    grid-auto-flow: column;
+}
+
 .card1{
     justify-content: center;
     align-items: center;
