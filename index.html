@@ -10,6 +10,7 @@
     <meta name="author" content="Lisakhanya Gasa" />
     <link rel="stylesheet" href="styles/base.css">
 </head>
+
 <body>
     <header>
         <h1 class="heading">WDD 131 Landing Page</h1>
@@ -21,46 +22,54 @@
             <a href="/final_project">Final Project</a>
         </nav>
     </header>
-    <main>
-        <!--section with image and short personal description-->
-        <section class="card-container">
-            <div class= "card1">
-                <div class="profile">
-                    <img class="image" src="images/profile_image.jpg" width="100%">
-                    <div class="intro">
-                        <h2>About Me</h2>
-                        <p>My name is Lisakhanya Gasa. I was born in South Africa in a small little town called King William's 
-                        Town, also now known as Qonce. I now live in Mdantsane,
-                        and am looking for work. I have 3 lovely children who I love doing scripture study and show-stopping
-                        karoake with.</p>
-                </div>
-            </div>
 
-            <div class="card2">
-                <div class="mdantsane">
-                    <img class="mda_image" src="images/greenika.jpeg" width="100%">
-                    <div class="description">
-                        <h2>About Mdantsane, South Africa</h2>
-                        <p>Mdantsane is located between King William's Town and East London. It is the second biggest township 
-                        in South Africa, the lagest being Soweto in Johannesburg. Mdantsane is populated by beautiful mountains
-                        and streams. It has a river called the Beidle Drift River, known as uGreenika by the locals.</p>
+    <main>
+        <div class = "main_layout">
+            <!-- card container -->
+            <section class="card-container">
+                <!-- About Me card -->
+                <div class= "card1">
+                    <h2>About Me</h2>
+                    <div class="content">
+                        <div class="intro">
+                            <p>My name is Lisakhanya Gasa. I was born in South Africa in a small little town called King William's 
+                            Town, also now known as Qonce. I now live in Mdantsane,
+                            and am looking for work. I have 3 lovely children who I love doing scripture study and show-stopping
+                            karoake with.</p>
+                        </div>
+                        <img class="image" src="images/profile_image.jpg">
                     </div>
                 </div>
-            </div>
-            
-        </section>
 
-        <section>
-            <h2>Web Dev Resources</h2>
-            <nav>
-                <ul>
-                    <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
-                    <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
-                </ul>
-            </nav>
-        </section>
+                <!-- About Mdantsane card-->
+                <div class="card2">
+                    <h2>About Mdantsane, South Africa</h2>
+                    <div class="content">
+                        <div class="description">
+                            <p>Mdantsane is located between King William's Town and East London. It is the second biggest township 
+                            in South Africa, the lagest being Soweto in Johannesburg. Mdantsane is populated by beautiful mountains
+                            and streams. It has a river called the Beidle Drift River, known as uGreenika by the locals.</p>
+                        </div>
+                        <img class="mda_image" src="images/greenika.jpeg">
+                    </div>
+                </div> 
+            </section>
+
+            <!-- resources section -->
+            <section class="resources">
+                <h2>Web Dev Resources</h2>
+                <nav>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                        <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
     </main>
+
     <footer>
     </footer>
+
 </body>
 </html>
