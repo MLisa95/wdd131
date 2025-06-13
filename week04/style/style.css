@@ -1,0 +1,27 @@
+:root{
+    --image-width: 400px;
+    --image-height: 600px;
+    --image-margin: 20px;
+}
+
+.flower-gallery img{
+    display: block;
+    margin: auto; /** centers images within container **/
+    width: var(--image-width);
+    height: var(--image-height);
+    max-width: 600px;
+    animation: fadeIn 1s ease-in;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        filter: brightness(0);
+    }
+    to {
+        opacity: 1;
+        filter: brightness(1);
+    }
+}

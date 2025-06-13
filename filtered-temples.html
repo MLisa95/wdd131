@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Temple Photo Album</title>
+    <meta name="desciption" content="Temple photo album.">
+    <meta name="author" content="Lisakhanya Gasa">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="header">
+        <p class="text">Temple Album</p>
+
+        <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+
+        <nav class="temple-links">
+            <a href="#" id="home">Home</a>
+            <a href="#" id="old">Old</a>
+            <a href="#" id="new">New</a>
+            <a href="#" id="large">Large</a>
+            <a href="#" id="small">Small</a>
+        </nav>
+    </div>
+
+    <main>
+        <h1 class="title">Temples</h1>
+        <section id="templeCards"></section>
+    </main>
+
+    <footer>
+        <p>2025 | Lisakhanya | South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <!--last modified date-->
+    <script src="scripts/filtered-temples.js"></script>
+    
+    <script>
+        const lastModified = document.lastModified;
+        document.getElementById("lastModified").textContent = `Last modified: ${lastModified}`;
+    </script>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.querySelector('.temple-links');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+            menuToggle.textContent = navMenu.classList.contains('show') ? '✖' : '☰';
+        });
+    </script>
+</body>
+    
