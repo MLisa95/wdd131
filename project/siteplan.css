@@ -1,0 +1,41 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 2px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background-color: #eee;
+  font-weight: bold;
+}
+
+.wireframe-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: wrap;
+    margin-top: 1rem;
+}
+
+.wireframe {
+    text-align: center;
+}
+
+.wireframe.mobile {
+    flex: 1 1 35%;
+}
+
+.wireframe.desktop {
+    flex: 1 1 60%;
+}
+
+.wireframe img {
+    width: 100%;
+    max-width: 300px;
+}
