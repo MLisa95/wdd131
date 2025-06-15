@@ -1,0 +1,98 @@
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    max-width: fit-content;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 1.5rem;
+    color: lightgray;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+/* highlight stars on hover */
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: gold;
+}
+
+/* highlight stars that are selected */
+.star-rating input[type="radio"]:checked ~ label {
+    color: gold;
+}
+
+label,
+input,
+textarea {
+    display: block;
+    margin-bottom: 0.5rem; /* adds space after each element */
+    width: 100%; /* inputs stretch full width of their container */
+    max-width: 500px; /* optional to limit width */
+}
+
+select,
+#dateInstalled {
+    width: 100%;
+    max-width: 200px;
+}
+
+#review,
+#username {
+    width: 100%;
+    max-width: 370px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    display: inline-block;
+}
+
+fieldset label {
+    display: block;
+    margin: 1rem 0;
+    max-width: 500px;
+}
+
+.review-form fieldset {
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 1rem 0;
+    border: none;
+    padding: 0.5rem 2%;
+}
+
+form {
+    background-color: rgb(189, 238, 253);
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 10px 0 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    max-width: 370px;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.review-form legend {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+    font-size: 1rem;
+    color: rgb(7, 7, 59);
+}
