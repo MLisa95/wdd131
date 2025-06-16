@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Place</title>
+    <meta name="desciption" content="Temply photo album.">
+    <meta name="author" content="Lisakhanya Gasa">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header class="place-title">
+        <h1>Mdantsane</h1>
+    </header>
+    <section class="hero">
+        <picture>
+            <source srcset="images/Mdantsane-mall-3.webp" media="(min-width: 600px)">
+            <img src="images/Mdantsane-mall-3.webp" alt="Beautiful view of the Mdantsane City Mall" />
+        </picture>
+
+        <div class="card data-card">
+        <h3>Data</h3>
+        <ul>
+            <li><strong>Province:</strong> Eastern Cape</li>
+            <li><strong>Population:</strong> ~154,000</li>
+            <li><strong>Established:</strong> 1963</li>
+            <li><strong>Languages:</strong> isiXhosa, English</li>
+            <li><strong>Currency:</strong> South African Rand (ZAR)</li>
+            <li><strong>Time Zone:</strong> UTC+2</li>
+            <li><strong>Calling Code:</strong> +27</li>
+            <li><strong>Postal Code:</strong> 5219</li>
+        </ul>
+    </div>
+
+    <div class="card weather-card">
+    <h3>Weather <span class="weather-icon">⛅</span></h3>
+    <ul>
+        <li><strong>Temperature:</strong> 22 °C</li>
+        <li><strong>Conditions:</strong> Sunny</li>
+        <li><strong>Wind:</strong> 10 km/h</li>
+        <li><strong>Wind Chill:</strong> <span id="windchill">N/A</span></li>
+    </ul>
+    </div>
+</section>
+<footer>
+        <p>2025 | Lisakhanya | South Africa</p>
+        <p id="lastModified"></p>
+</footer>
+
+    <!--last modified date-->
+    <script>
+        const lastModified = document.lastModified;
+        document.getElementById("lastModified").textContent = `Last modified: ${lastModified}`;
+    </script>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+            menuToggle.textContent = navMenu.classList.contains('show') ? '✖' : '☰';
+  });
+</script>
+
+</body>
