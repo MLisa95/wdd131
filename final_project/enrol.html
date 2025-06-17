@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adission Form</title>
+    <meta name="desciption" content="Final Project">
+    <meta name="author" content="Lisakhanya Gasa">
+    <link rel="stylesheet" href="styles/my-site.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Lexend&family=Outfit&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-title">
+                <a href="index.html">
+                    <img src="images/kot-logo.png" alt="Kids On Tech Logo" class="logo-image">
+                </a>
+            </div>
+                    
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="my-site.html" class="active">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="enrol.html">Enrollment</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </nav>
+
+            <div class="hero-buttons">
+                    <a href="courses.html" class="btn-primary">Explore</a>
+                    <a href="enrol.html" class="btn-primary">Enrol</a>
+            </div>
+        </div>
+    </header>
+    
+    <main class="form-container">
+        <h1>KOT Admission Form</h1>
+        <!---- STUDENT INFO ---->
+        <form id="admissionForm">
+            <fieldset>
+                <legend><u>STUDENT'S INFORMATION</u></legend>
+                    <div class="form-row">
+                        <label for="StudentFirst">Student's Name</label>
+                        <div class="input-group">
+                            <input type="text" id="StudentFirst" name="StudentFirst" placeholder="First Name" required>
+                            <input type="text" id="StudentLast" name="StudentLast" placeholder="Surname" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="dob">Student Date-of-Birth</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">-- Select Gender --</option>
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="grade">Current Grade*</label>
+                        <select id="grade" name="grade" required>
+                            <option value="">-- Select Grade --</option>
+                            <option value="Grade R">Grade R</option>
+                            <option value="Grade 1">Grade 1</option>
+                            <option value="Grade 2">Grade 2</option>
+                            <option value="Grade 3">Grade 3</option>
+                            <option value="Grade 4">Grade 4</option>
+                            <option value="Grade 5">Grade 5</option>
+                            <option value="Grade 6">Grade 6</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="medicalNotes">Allergies or Medical Notes</label>
+                        <textarea id="medicalNotes" name="medicalNotes" rows="4" placeholder="Please mention any allergies or important medical information..."></textarea>
+                    </div>
+            </fieldset>
+
+            <!---- PARENT INFO ---->
+            <fieldset>
+                <legend><u>MOTHER'S INFORMATION</u></legend>
+
+                <div class="form-row">
+                    <label for="motherName">Full Name*</label>
+                    <div class="input-group">
+                        <input type="text" id="motherFirst" name="motherFirst" placeholder="First Name" required>
+                        <input type="text" name="Surname" placeholder="Surname" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="motherPhone">Phone Number*</label>
+                    <input type="tel" id="motherPhone" name="motherPhone" placeholder="e.g. 082 123 4567" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="motherEmail">Email Address*</label>
+                    <input type="email" id="motherEmail" name="motherEmail" placeholder="someone@example.com" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend><u>FATHER'S INFORMATION</u></legend>
+
+                <div class="form-row">
+                    <label for="fatherName">Full Name*</label>
+                    <div class="input-group">
+                        <input type="text" id="fatherFirst" name="fatherFirst" placeholder="First Name" required>
+                        <input type="text" name="Surname" placeholder="Surname" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="fatherPhone">Phone Number*</label>
+                    <input type="tel" id="fatherPhone" name="fatherPhone" placeholder="e.g. 082 123 4567" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="fatherEmail">Email Address*</label>
+                    <input type="email" id="fatherEmail" name="fatherEmail" placeholder="someone@example.com" required>
+                </div>
+            </fieldset>
+
+            <!----- EMERGENCY CONTACT INFO ---->
+
+            <fieldset>
+                <legend><u>EMERGENCY CONTACT</u></legend>
+
+                <div class="form-row">
+                    <label for="emergencyName">Name*</label>
+                    <input type="text" id="emergencyName" name="emergencyName" placeholder="e.g. Aunt Lerato" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="emergencyRelationship">Relationship to Child*</label>
+                    <input type="text" id="emergencyRelationship" name="emergencyRelationship" placeholder="e.g. Aunt, Neighbor, Family Friend" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="emergencyPhone">Phone Number*</label>
+                    <input type="tel" id="emergencyPhone" name="emergencyPhone" placeholder="e.g. 071 987 6543" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="emergencyEmail">Email Address*</label>
+                    <input type="email" id="emergencyEmail" name="emergencyEmail" placeholder="example@example.com" required>
+                </div>
+            </fieldset>
+
+            <div class="form-row">
+                <label></label>
+                <button type="submit" class="submit-btn">Enrol My Child</button>
+            </div>
+        </form>
+    </main>
+</body>
