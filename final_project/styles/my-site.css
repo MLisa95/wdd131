@@ -14,7 +14,7 @@
 }
 
 main {
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
 header {
@@ -25,6 +25,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 /******* HEADER ALIGNMENT ********/
@@ -307,3 +308,4 @@ img.loaded {
     opacity: 1;
     transform: translateY(0);
 }
+
